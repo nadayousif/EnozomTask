@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#F44336"
     android:backgroundTint="#F44336"
-    tools:context=".emp.MainActivity" >
+    tools:context=".emp.view.MainActivity" >
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/emp_rec"

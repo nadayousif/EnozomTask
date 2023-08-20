@@ -5,35 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".addEmp.AddActivity">
+    tools:context=".addEmp.view.AddActivity">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="310dp"
-        android:layout_height="55dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="311dp"
-        android:layout_height="63dp"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/user_email"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="228dp"
+        android:backgroundTint="@color/white"
+        android:drawableTint="@color/white"
         android:ems="10"
-        android:hint="Enter your email address"
+        android:hint="email"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/save"
@@ -57,14 +46,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.google.android.material.chip.ChipGroup
-        android:id="@+id/skills"
+    <EditText
+        android:id="@+id/name_text"
         android:layout_width="323dp"
-        android:layout_height="101dp"
-        app:layout_constraintBottom_toTopOf="@+id/addPhoto"
+        android:layout_height="76dp"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress">
+        app:layout_constraintTop_toTopOf="parent" />
 
-    </com.google.android.material.chip.ChipGroup>
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="288dp"
+        android:layout_height="96dp"
+        android:hint="Skills"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.enozomtask.emp
+package com.example.enozomtask.emp.view
 
 import android.view.LayoutInflater
 import android.view.View
